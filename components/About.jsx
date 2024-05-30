@@ -217,7 +217,7 @@ export const About = () => {
             padding: 0 2rem;
           }
         }
-        @media (max-width: 426px) {
+        @media (max-width: 500px) {
           .about-wrapper {
             width: 100%;
             height: 100%;

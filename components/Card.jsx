@@ -121,7 +121,7 @@ export const Card = (props) => {
             font-size: 21px;
           }
         }
-        @media (max-width: 426px) {
+        @media (max-width: 500px) {
           .card {
             flex: 0 1 75%;
             height: 24rem;

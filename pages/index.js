@@ -247,6 +247,31 @@ export default function Home() {
             margin: 2rem;
           }
         }
+
+        @media (max-width: 500px) {
+          .projects-container {
+            width: 100%;
+            height: 100%;
+            padding: 4rem 0;
+          }
+          .cards-container {
+            height: 100%;
+            flex-direction: column;
+            flex-flow: wrap;
+          }
+          .form-container {
+            height: 100%;
+            gap: 10px;
+          }
+          .projects-h2 {
+            font-size: 24px;
+            margin: 2rem;
+          }
+          .form-h2 {
+            font-size: 24px;
+            margin: 2rem;
+          }
+        }
       `}</style>
     </>
   );

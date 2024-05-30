@@ -101,7 +101,7 @@ export const Hero = () => {
           }
         }
 
-        @media (max-width: 426px) {
+        @media (max-width: 500px) {
           h3 {
             font-size: 30px;
           }

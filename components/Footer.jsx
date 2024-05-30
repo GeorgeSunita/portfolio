@@ -50,7 +50,7 @@ export const Footer = () => {
             font-size: 15px;
           }
         }
-        @media (max-width: 426px) {
+        @media (max-width: 500px) {
           .footer-container {
             padding: 10px 0;
             width: 100%;

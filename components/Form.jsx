@@ -303,7 +303,7 @@ export const Form = () => {
           }
         }
 
-        @media (max-width: 426px) {
+        @media (max-width: 500px) {
           .form {
             width: 85%;
             height: 100%;

@@ -226,7 +226,7 @@ export const Navbar = forwardRef((props, ref) => {
             z-index: 10;
           }
         }
-        @media (max-width: 426px) {
+        @media (max-width: 500px) {
           .nav-wrapper {
             width: 100%;
             height: 100%;
