@@ -205,12 +205,12 @@ export const About = () => {
           }
 
           .about {
-            width: 70%;
+            flex-basis: 45%;
             height: 100%;
             text-align: center;
           }
           .skills-container {
-            width: 80%;
+            flex-basis: 45%;
             height: 100%;
           }
           .skills {
@@ -225,24 +225,22 @@ export const About = () => {
             align-items: center;
             justify-content: center;
           }
-          .skills {
-            gap: 12px;
-          }
           h3 {
             margin-top: 2.5rem;
             text-align: center;
           }
           .about {
-            width: 90%;
+            flex-basis: 100%;
             height: 100%;
             text-align: center;
           }
           .skills-container {
-            width: 100%;
+            flex-basis: 105%;
             height: 100%;
           }
           .skills {
-            padding: 0 2rem;
+            width: 80%;
+            height: 100%;
           }
         }
       `}</style>
