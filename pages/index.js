@@ -15,7 +15,7 @@ export default function Home() {
       image: "/portfolio.png",
       description:
         "This is my Portfolio website with sticky navigation and custom contact me form.Built using React.js.",
-      link: "https://sgeorge.netlify.app/",
+      link: "https://sgeorgedev.netlify.app/",
     },
     {
       title: "PayAPI Website",
