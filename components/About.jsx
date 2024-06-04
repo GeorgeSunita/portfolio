@@ -17,6 +17,10 @@ export const About = () => {
             recipes in the kitchen, trying my hand in gardening when it is
             Spring/Summer or getting excited about the next travel destination.{" "}
           </p>
+
+          <a href="resume.pdf" download="resume">
+            Download CV
+          </a>
         </div>
 
         <div className="skills-container">
@@ -26,6 +30,7 @@ export const About = () => {
             <div className="skill">CSS3</div>
             <div className="skill">JavaScript</div>
             <div className="skill">React.js</div>
+            <div className="skill">Node.js/NPM</div>
             <div className="skill">PHP</div>
             <div className="skill">MySQL</div>
             <div className="skill">SEO</div>
@@ -37,14 +42,14 @@ export const About = () => {
       <style jsx>{`
         .about-wrapper {
           flex-wrap: wrap;
-          gap: 3rem;
+          gap: 6rem;
           color: white;
           font-family: "Rubik", sans-serif;
           align-items: center;
           justify-content: center;
           height: 60vh;
           background-color: black;
-          line-height: 1.5;
+          line-height: 1.3;
           margin-bottom: 1rem;
         }
         h3 {
@@ -56,24 +61,35 @@ export const About = () => {
         .para-1 {
           margin-bottom: 10px;
         }
-        .about {
-          flex-basis: 35%;
-          line-height: 1.8;
-          height: 30vh;
-          margin: 5px;
-          text-align: left;
+        .para-2 {
+          margin-bottom: 10px;
         }
-        .skills-container {
-          flex-basis: 35%;
-          margin: 5px;
-          height: 30vh;
-          line-height: 1.8;
+
+        a {
+          background-color: #b4afa9;
+          border-radius: 6px;
+          color: white;
+          cursor: pointer;
+          display: inline-block;
+          font-family: inherit;
+          font-size: 18px;
+          font-weight: 400;
+          margin: 12px;
+          padding: 10px 35px;
+          transition: all 0.15s ease-in-out;
+          text-decoration: none;
         }
+        a:hover {
+          background-color: #b4afa9;
+          filter: brightness(80%);
+          transform: translateY(4px);
+        }
+
         .skills {
           display: flex;
           flex-direction: row;
           flex-flow: wrap;
-          gap: 25px;
+          gap: 37px;
           align-items: center;
           justify-content: space-evenly;
         }
@@ -87,12 +103,13 @@ export const About = () => {
           flex-basis: 35%;
           height: 55vh;
           margin: 5px;
+          align-items: center;
+          justify-content: space-evenly;
         }
         .skills-container {
           flex-basis: 30%;
           height: 55vh;
           margin: 5px;
-          gap: 40px;
         }
         h3 {
           font-size: 35px;
@@ -129,24 +146,34 @@ export const About = () => {
         @media (min-width: 2100px) {
           .about-wrapper {
             height: 100%;
+            line-height: 1.6;
           }
           h3 {
+            font-size: 40px;
             margin: 4rem;
           }
-
+          a {
+            font-size: 20px;
+          }
           .about {
             flex-basis: 37%;
-            height: 60vh;
+            height: 55vh;
             margin: 5px;
           }
           .skills-container {
             flex-basis: 30%;
-            height: 60vh;
+            height: 55vh;
             margin: 5px;
+          }
+          .skills {
+            gap: 45px;
+          }
+          .skill {
+            padding: 15px;
             font-size: 20px;
           }
           p {
-            font-size: 20px;
+            font-size: 22px;
           }
         }
 
@@ -163,7 +190,7 @@ export const About = () => {
             flex-basis: 40%;
             height: 60vh;
             margin: 5px;
-            line-height: 1.6;
+            line-height: 1.3;
           }
           .skills-container {
             flex-basis: 40%;
@@ -181,11 +208,13 @@ export const About = () => {
             flex-basis: 45%;
             height: 100%;
             padding: 5px;
+            line-height: 1.6;
           }
           .skills-container {
-            flex-basis: 35%;
+            flex-basis: 38%;
             height: 100%;
             padding: 5px;
+            line-height: 1;
           }
           h3 {
             font-size: 25px;
@@ -235,7 +264,7 @@ export const About = () => {
             text-align: center;
           }
           .skills-container {
-            flex-basis: 105%;
+            flex-basis: 100%;
             height: 100%;
           }
           .skills {
