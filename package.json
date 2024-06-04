@@ -1,5 +1,5 @@
 {
-  "homepage": "http://github.com/GeorgeSunita.github.io/portfolio",
+  "homepage": "http://GeorgeSunita.github.io/portfolio",
   "private": true,
   "scripts": {
     "build": "next build",
