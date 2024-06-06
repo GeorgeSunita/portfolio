@@ -1,4 +1,4 @@
-import { useState, useEffect, forwardRef } from "react";
+import { useState, useEffect, forwardRef, useRef } from "react";
 import { Link } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseCircleOutline } from "react-icons/io5";
@@ -8,6 +8,19 @@ export const Navbar = forwardRef((props, ref) => {
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
   };
+  let menuRef = useRef();
+  useEffect(() => {
+    let handler = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        setHamburgerOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handler);
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  });
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +33,7 @@ export const Navbar = forwardRef((props, ref) => {
   return (
     <>
       <div className={`${sticky ? "sticky" : ""}`}>
-        <div className="nav-wrapper stack h">
+        <div className="nav-wrapper stack h" ref={menuRef}>
           <div className="logo-container">
             <img className="logo" src="/sg-logo1.png" alt="logo" />
           </div>
