@@ -3,7 +3,7 @@ export const Hero = () => {
     <>
       <div className="myself-wrapper stack v g-4" id="hero">
         <div className="image-container">
-          <img src="/hero.jpg" alt="author" />
+          <img src="/ss.jpg" alt="image of sunita" />
         </div>
         <div>
           {" "}
