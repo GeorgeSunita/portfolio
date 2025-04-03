@@ -14,7 +14,7 @@ export default function Home() {
       title: "Product List with Cart",
       image: "/shoppingcart.png",
       description:
-        "Shopping cart with data for the products is in the local data.json file. The UI is populated dynamically and updated in multiple places on user actions. Implemented using React.js , Tailwind CSS.",
+        "Shopping cart.  The UI is populated dynamically and updated in multiple places on user actions. Implemented using React.js,Tailwind CSS.",
       link: "https://shoppingcartwithproductlist.netlify.app/",
     },
     {
