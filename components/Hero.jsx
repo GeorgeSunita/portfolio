@@ -3,7 +3,7 @@ export const Hero = () => {
     <>
       <div className="myself-wrapper stack v g-4" id="hero">
         <div className="image-container">
-          <img src="/ss.jpg" alt="image of sunita" />
+          <img src="/sunitaG.jpg" alt="image of sunita" />
         </div>
         <div>
           {" "}
@@ -27,8 +27,8 @@ export const Hero = () => {
         }
         .image-container {
           border-radius: 50%;
-          width: 15rem;
-          height: 15rem;
+          width: 14rem;
+          height: 16rem;
           overflow: hidden;
           padding: 5px;
           border: 3px solid black;
@@ -36,6 +36,7 @@ export const Hero = () => {
         .image-container img {
           width: 100%;
           height: 100%;
+          object-fit: cover;
         }
         img {
           border-radius: 50%;
