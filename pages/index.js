@@ -11,17 +11,17 @@ import { Link } from "react";
 export default function Home() {
   const cards = [
     {
-      title: "Portfolio Website",
-      image: "/portfolio.png",
+      title: "Product List with Cart",
+      image: "/shoppingcart.png",
       description:
-        "This is my Portfolio website with sticky navigation and custom contact me form.Built using React.js.",
-      link: "https://sgeorgedev.netlify.app/",
+        "Shopping cart with data for the products is in the local data.json file. The UI is populated dynamically and updated in multiple places on user actions. Implemented using React.js , Tailwind CSS.",
+      link: "https://shoppingcartwithproductlist.netlify.app/",
     },
     {
       title: "REST Countries API",
       image: "/RESTcountries.png",
       description:
-        "Project integrating REST countries API to pull country data and display it.",
+        "Project integrating REST countries API to pull country data and display it. Implemented using React.js,Tailwind CSS.",
       link: "https://sg-rest-countries.netlify.app/",
     },
     {
